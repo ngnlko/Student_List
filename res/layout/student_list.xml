@@ -1,0 +1,78 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context="bgu.Student_List.MainActivity"
+    tools:ignore="MergeRootFrame" >
+
+    <Spinner
+        android:id="@+id/change_group_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="5dp"
+        android:entries="@array/change_group" />
+
+    <FrameLayout
+        android:id="@+id/FrameLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background" >
+
+        <ListView
+            android:id="@+id/list_student"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="80dp" >
+
+        </ListView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn_new_student"
+                style="@color/btn_color"
+                android:layout_width="90dp"
+                android:layout_height="62dp"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="15dp"
+                android:background="@color/btn_color"
+                android:text="@string/add_stud"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/sms_send"
+                android:layout_width="90dp"
+                android:layout_height="62dp"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:background="@color/btn_color"
+                android:text="Отправить смс"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/find"
+                style="@color/btn_color"
+                android:layout_width="90dp"
+                android:layout_height="62dp"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="-5dp"
+                android:layout_marginLeft="10dp"
+                android:background="@color/btn_color"
+                android:text="@string/find"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

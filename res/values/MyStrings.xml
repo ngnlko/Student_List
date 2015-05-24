@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+
+    <string name="Name">Имя студента *</string>
+    <string name = "Surname">Фамилия студента *</string>
+    <string name = "Patronymic">Отчество студента</string>
+    <string name = "phone">Номер телефона *</string>
+    <string name = "date_of_birth">Нажмите чтобы указать дату рождения</string>
+    <string name = "stud_number">Номер студента в группе *</string>
+    <string name = "stud_group">Номер группы студента</string>
+    <string name = "home_adress">Улица и дом</string>
+    <string name = "region_stud">Район</string>
+    <string name = "district_stud">Город</string>
+    <string name = "student_father">ФИО отца</string>
+    <string name = "student_mother">ФИО матери</string>
+    <string name = "education_form">форма обучения</string>
+    <string name = "pict">Фотография</string>
+    
+	
+    <string name = "save">Сохранить</string>
+    <string name = "call_stud">Позвонить</string>
+    <string name = "add_stud">Добавить студента</string>
+    <string name = "add_to_phonebook">Добавить в телефонную книгу</string>
+    <string name = "delet_stud">Удалить студента</string>
+    <string name = "load_stud">Загрузить данные</string>
+    <string name = "edit_stud">Изменить данные</string>
+    <string name = "add_photo">Сделать фото</string>
+    <string name = "btn_search">Найти</string>
+    <string name = "find">Поиск</string>
+    <string name = "about_">Автор</string>
+    <string name = "send" >Отправить смс</string>
+    <string name = "next">Далее</string>
+    <string name = "options">Настройки</string>
+    
+    <string name = "notif_on">Включить</string>
+    <string name = "notif_off">Выключить</string>
+    <string name = "notif_options">Настройки уведомлений</string>
+    <string name = "list_stud">Список студентов</string>
+    
+    <string-array name = "group_id">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    
+        <string-array name = "change_group">
+        <item>Все группы</item>
+        <item>1 группа</item>
+        <item>2 группа</item>
+        <item>3 группа</item>
+        <item>4 группа</item>
+        <item>5 группа</item>
+    </string-array>
+    
+    <string-array name = "gender">
+        <item>Муж.</item>
+        <item>Жен.</item>
+    </string-array>
+    
+        <string-array name = "form_education">
+        <item>Бюджет</item>
+        <item>Коммерция</item>
+    </string-array>
+</resources>

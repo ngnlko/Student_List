@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    android:scrollbars="vertical" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/all_student"
+                android:layout_width="180dp"
+                android:layout_height="56dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:background="@color/btn_color"
+                android:text="@string/list_stud"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/btn_new_student"
+                android:layout_width="180dp"
+                android:layout_height="56dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@color/btn_color"
+                android:text="@string/add_stud"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/find"
+                android:layout_width="180dp"
+                android:layout_height="56dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@color/btn_color"
+                android:text="@string/find"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/sms_send"
+                android:layout_width="180dp"
+                android:layout_height="56dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@color/btn_color"
+                android:text="Отправить смс"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/options"
+                android:layout_width="180dp"
+                android:layout_height="56dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/btn_color"
+                android:text="@string/options"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/about"
+                android:layout_width="180dp"
+                android:layout_height="56dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@color/btn_color"
+                android:text="@string/about_"
+                android:textSize="15sp"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

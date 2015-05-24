@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp" >
+
+        <ImageView
+            android:id="@+id/image_view"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/camera" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/groupid_show"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/header_view"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Student"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/fio_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="fio"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/footer_view"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Phone"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/adress_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="adress"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/form_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="form"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

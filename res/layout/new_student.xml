@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background" >
+
+        <Button
+            android:id="@+id/save_stud"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_gravity="left|bottom"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="15dp"
+            android:background="@color/btn_color"
+            android:text="@string/save" />
+
+        <Button
+            android:id="@+id/call_stud"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_gravity="right|bottom"
+            android:layout_marginBottom="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@color/btn_color"
+            android:text="@string/call_stud" />
+
+        <ScrollView
+            android:id="@+id/scroll_new_student"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="70dp"
+            android:background="@color/background" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@color/background"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/student_image"
+                        android:layout_width="140dp"
+                        android:layout_height="140dp"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginTop="10dp"
+                        android:contentDescription="@string/pict"
+                        android:src="@drawable/camera" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <Button
+                            android:id="@+id/add_photo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@color/btn_color"
+                            android:text="@string/add_photo" />
+
+                        <Button
+                            android:id="@+id/select_photo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="20dp"
+                            android:background="@color/btn_color"
+                            android:text="Выбрать из галереи" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/student_name"
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:ems="10"
+                    android:hint="@string/Name" >
+
+                    <requestFocus />
+                </EditText>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal" >
+
+                    <Spinner
+                        android:id="@+id/change_group"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:entries="@array/group_id" />
+
+                    <TextView
+                        android:id="@+id/TextView_group"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="2"
+                        android:text="@string/stud_group" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <Spinner
+                        android:id="@+id/change_gender"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:entries="@array/gender" />
+
+                    <TextView
+                        android:id="@+id/TextView_sex"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="2"
+                        android:text="Пол студента" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/Surname"
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:ems="10"
+                    android:hint="@string/Surname" />
+
+                <EditText
+                    android:id="@+id/Patronymic"
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:ems="10"
+                    android:hint="@string/Patronymic" />
+
+                <EditText
+                    android:id="@+id/student_phone"
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:ems="10"
+                    android:hint="@string/phone"
+                    android:inputType="phone" />
+
+                <CheckBox
+                    android:id="@+id/add_to_phonebook"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/add_to_phonebook"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/date_of_birth"
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:clickable="true"
+                    android:ems="14"
+                    android:hint="@string/date_of_birth" />
+
+                <EditText
+                    android:id="@+id/region_stud"
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                     android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:ems="10"
+                    android:hint="@string/region_stud" />
+
+                <EditText
+                    android:id="@+id/district_stud"
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:ems="10"
+                    android:hint="@string/district_stud" />
+
+                <EditText
+                    android:id="@+id/home_adress"
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:ems="10"
+                    android:hint="@string/home_adress" />
+
+                <EditText
+                    android:id="@+id/student_father"
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:ems="10"
+                    android:hint="@string/student_father" />
+
+                <EditText
+                    android:id="@+id/father_phone"
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:ems="10"
+                    android:hint="@string/phone"
+                    android:inputType="phone" />
+
+                <CheckBox
+                    android:id="@+id/add_to_phonebook_father"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+				 	android:layout_gravity="center"
+                    android:text="@string/add_to_phonebook"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/student_mother"
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:ems="10"
+                    android:hint="@string/student_mother" />
+
+                <EditText
+                    android:id="@+id/mother_phone"
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:ems="10"
+                    android:hint="@string/phone"
+                    android:inputType="phone" />
+
+                <CheckBox
+                    android:id="@+id/add_to_phonebook_mother"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/add_to_phonebook"
+                    android:textSize="12sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <Spinner
+                        android:id="@+id/form_"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:entries="@array/form_education" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </ScrollView>
+    </FrameLayout>
+
+</LinearLayout>
